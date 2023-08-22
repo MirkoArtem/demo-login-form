@@ -12,10 +12,10 @@ public class Student {
      private String address;
      private String telNumber;
      private String faculty;
-     private String course;
+     private int course;
      private String group;
 
-    public Student(int id, String firstName, String secondName, String thirtName, String birthday, String address, String telNumber, String faculty, String course, String group) {
+    public Student(int id, String firstName, String secondName, String thirtName, String birthday, String address, String telNumber, String faculty, int course, String group) {
         this.id = id;
         this.firstName = firstName;
         this.secondName = secondName;
@@ -29,7 +29,7 @@ public class Student {
         this.id = ++idCounter;
     }
 
-    public Student(String secondName, String course) {
+    public Student(String secondName, int course) {
         this.id = ++idCounter;
         this.secondName = secondName;
         this.course = course;
@@ -63,7 +63,7 @@ public class Student {
         return faculty;
     }
 
-    public String getCourse() {
+    public int getCourse() {
         return course;
     }
 
