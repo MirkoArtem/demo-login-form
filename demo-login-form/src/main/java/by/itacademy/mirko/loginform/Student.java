@@ -30,6 +30,7 @@ public class Student {
     }
 
     public Student(String secondName, String course) {
+        this.id = ++idCounter;
         this.secondName = secondName;
         this.course = course;
     }
